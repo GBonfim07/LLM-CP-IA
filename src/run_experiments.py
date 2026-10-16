@@ -57,7 +57,7 @@ def main():
             continue
         cmd = [py, str(SRC / "train.py"), "--run", nome,
                "--rank", str(hp["rank"]), "--lr", str(hp["lr"]),
-               "--epochs", str(1 if a.rapido else hp["epochs"]), "--quant", hp["quant"]] + extra_modelo
+               "--epochs", str(1 if a.rapido and hp["epochs"] <= 2 else hp["epochs"]), "--quant", hp["quant"]] + extra_modelo
         if a.rapido:
             cmd += ["--limite_treino", "320"]
         if not rodar(cmd):
