@@ -39,7 +39,7 @@ def main():
         "vram_total_gb": round(props.total_memory / 1024**3, 2),
         "compute_capability": f"{props.major}.{props.minor}",
         "multiprocessadores": props.multi_processor_count,
-        "suporta_bf16": torch.cuda.is_bf16_supported(),
+        "suporta_bf16": torch.cuda.get_device_capability(0)[0] >= 8,
         "qtd_gpus": torch.cuda.device_count(),
     }
     linha("-" * 64)

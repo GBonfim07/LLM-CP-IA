@@ -77,7 +77,7 @@ def exigir_gpu(permitir_cpu=False):
 def precisao():
     if not torch.cuda.is_available():
         return torch.float32
-    return torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+    return torch.bfloat16 if torch.cuda.get_device_capability(0)[0] >= 8 else torch.float16
 
 
 def carregar_modelo(nome=MODELO_PADRAO, quant="4bit", adapter=None, permitir_cpu=False):
