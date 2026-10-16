@@ -1,0 +1,63 @@
+{
+  "train": {
+    "total": 800,
+    "categoria": {
+      "cartao_bloqueado": 100,
+      "segunda_via_boleto": 100,
+      "acesso_bloqueado": 100,
+      "compra_nao_reconhecida": 100,
+      "emprestimo": 100,
+      "cobranca_indevida": 100,
+      "pix_nao_creditado": 100,
+      "resgate_investimento": 100
+    },
+    "urgencia": {
+      "media": 312,
+      "alta": 236,
+      "baixa": 252
+    },
+    "com_valor": 374,
+    "com_canal": 293
+  },
+  "val": {
+    "total": 96,
+    "categoria": {
+      "segunda_via_boleto": 12,
+      "cartao_bloqueado": 12,
+      "pix_nao_creditado": 12,
+      "cobranca_indevida": 12,
+      "resgate_investimento": 12,
+      "compra_nao_reconhecida": 12,
+      "emprestimo": 12,
+      "acesso_bloqueado": 12
+    },
+    "urgencia": {
+      "baixa": 34,
+      "media": 40,
+      "alta": 22
+    },
+    "com_valor": 45,
+    "com_canal": 34
+  },
+  "test": {
+    "total": 120,
+    "categoria": {
+      "resgate_investimento": 15,
+      "segunda_via_boleto": 15,
+      "cartao_bloqueado": 15,
+      "acesso_bloqueado": 15,
+      "cobranca_indevida": 15,
+      "emprestimo": 15,
+      "compra_nao_reconhecida": 15,
+      "pix_nao_creditado": 15
+    },
+    "urgencia": {
+      "baixa": 35,
+      "alta": 38,
+      "media": 47
+    },
+    "com_valor": 62,
+    "com_canal": 38,
+    "template_novo": 64
+  }
+}

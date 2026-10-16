@@ -1,0 +1,11 @@
+runs/*/adapter/
+runs/*/tmp/
+*.safetensors
+*.bin
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.gradio/
+flagged/
